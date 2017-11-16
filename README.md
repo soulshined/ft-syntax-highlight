@@ -10,7 +10,7 @@ A lightweight, **pure CSS** syntax-highlighter; no Javascript required. A syntax
 | [Getting Started](#getting-started) | How to link to project & recommended usage |
 | [About](#about) | Review the mission of this project & learn about the benefits of a pure CSS syntax highlighter over automated counterparts |
 | [Understanding Selectors](#understanding-selectors) | Overview of why the tagging system is structured as it stands & best practices |
-| [Support](#support) | Detail overview of supported languages, features and browsers |
+| [Support](#support) | Detail overview of supported languages, features, UI themes, syntax themes and browsers |
 | [Road Map](#road-map) | Outlined vision and plans for future languages |
 | [Technical Specs](#technical-specs) | Any relevant under-the-hood stuff; font used, fallbacks etc |
 | [License](#license) | |
