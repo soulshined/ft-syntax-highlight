@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FT-Syntax-Highlight | HTML Example</title>
+    <link rel="stylesheet" href="../../src/ft-syntax-highlight.css">
+  </head>
+  <body>
+    <p>Right click > Select "View Page Source" to see source code.</p>
+    <p>HTML source code must use entity names in place of literals. For example: a less than symbol (<) must be typed with it's entity name: <b>&amp;lt;</b> </p>
+    <b>EXAMPLE 1:</b>
+    <pre class="ft-syntax-highlight" data-syntax="html" data-syntax-theme="one-dark" data-showTooltips="true">
+      <code>
+      <span class="newline"></span>
+      <span class="newline">&lt;<span class="identifier-native">noscript</span> <span class="identifier">id</span>=<span class="value">"noscriptDiv"</span>&gt; </span>
+      <span class="newline">  &lt;<span class="identifier-native">div</span> <span class="identifier">class</span>=<span class="value">"alert alert-danger"</span>&gt; </span>
+      <span class="newline">    You don't have javascript enabled #Sad </span>
+      <span class="newline"></span>
+      <span class="newline">    This will only display when javascript is not enabled</span>
+      <span class="newline"></span>
+      <span class="newline">   For more details see &lt;<span class="identifier-native">a</span> <span class="identifier">href</span>="<span class="url">https://www.somewebsite.com</span>" <span class="identifier">target</span>="<span class="value">_blank</span>">here&lt;/<span class="identifier-native">a</span>&gt;</span>
+      <span class="newline">  &lt;/<span class="identifier-native">div</span>&gt;</span>
+      <span class="newline">&lt;/<span class="identifier-native">noscript</span>&gt;<span class="comment">&lt;!-- END OF NOSCRIPT-CONTAINER --&gt;</span></span>
+      <span class="newline"></span>
+      </code>
+    </pre>
+    <b>EXAMPLE 2:</b>
+    <pre class="ft-syntax-highlight" data-syntax="html" data-syntax-theme="bootstrap" data-ui-theme="bootstrap4">
+      <code>
+      <span class="comment">&lt;!-- meta tag for opting out of SEO indexing --&gt;</span>
+      <span class="comment">&lt;!-- in other words, google searches wont populate your page --&gt;</span>
+      ...
+      &lt;<span class="identifier-native">head</span>&gt;
+
+        &lt;<span class="identifier-native">meta</span> <span class="identifier">name</span>="<span class="value">robots</span>" <span class="identifier">content</span>="<span class="value">noindex, nofollow</span>">
+
+      &lt;<span class="identifier-native">/head</span>&gt;
+      ...
+      </code>
+    </pre>
+  </body>
+</html>
