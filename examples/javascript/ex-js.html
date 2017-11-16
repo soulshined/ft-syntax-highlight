@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FT-Syntax-Highlight | JS Example</title>
+    <link rel="stylesheet" href="../../src/ft-syntax-highlight.css">
+  </head>
+  <body>
+    <p>Right click > Select "View Page Source" to see source code.</p>
+    <b>EXAMPLE 1:</b>
+    <pre class="ft-syntax-highlight" data-syntax="js" data-syntax-theme="one-dark" data-showTooltips="true">
+      <code>
+      <span class="comment">// Example JS Class</span>
+      <span class="keyword">class</span> <span class="identifier-class">Rectangle</span> {
+        <span class="identifier">constructor</span>(<span class="parameter">height</span>, <span class="parameter">width</span>) {
+          <span class="object">this</span>.<span class="property">height</span> <span class="operand">=</span> height;
+          <span class="object">this</span>.<span class="property">width</span> <span class="operand">=</span> width;
+        }
+        <span class="comment">// Getter</span>
+        <span class="identifier-native">get</span> <span class="identifier-udf">area</span>() {
+          <span class="keyword">return</span> <span class="object">this</span>.<span class="identifier-udf">calcArea</span>();
+        }
+        <span class="comment">// Method</span>
+        <span class="identifier-udf">calcArea</span>() {
+          <span class="keyword">return</span> <span class="object">this</span>.<span class="property">height</span> <span class="operand">*</span> <span class="object">this</span>.<span class="property">width</span>;
+        }
+      }
+
+      <span class="keyword">const</span> <span class="identifier-constant">square</span> = <span class="keyword">new</span> <span class="identifier-class">Rectangle</span>(<span class="unit">10</span>, <span class="unit">10</span>);
+
+      <span class="identifier-class">console</span>.<span class="identifier-native">log</span>(<span class="object">square</span>.<span class="property">area</span>); <span class="comment"> //100</span>
+      </code>
+    </pre>
+    <b>EXAMPLE 2:</b>
+    <pre class="ft-syntax-highlight" data-syntax="js" data-syntax-theme="one-light" data-ui-theme="burberry" data-showTooltips="true">
+      <code>
+      <span class="comment">// Example JS Clamp polyfill</span>
+      <span class="keyword">function</span> <span class="identifier-udf">clamp</span>(<span class="parameter">num</span>, <span class="parameter">min</span>, <span class="parameter">max</span>) {
+        <span class="comment">// returns a num if between the min and max. If num is greater than max, it returns max, if num is less than min, it returns min</span>
+        <span class="keyword">return</span> num <span class="operand"><=</span> min <span class="operand">?</span> min : num <span class="operand">>=</span> max <span class="operand">?</span> max : num;
+      }
+      </code>
+    </pre>
+  </body>
+</html>
