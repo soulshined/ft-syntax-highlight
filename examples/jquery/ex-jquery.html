@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FT-Syntax-Highlight | jQuery Example</title>
+    <link rel="stylesheet" href="../../src/ft-syntax-highlight.css">
+  </head>
+  <body>
+    <p>Right click > Select "View Page Source" to see source code.</p>
+    <b>EXAMPLE 1:</b>
+    <pre class="ft-syntax-highlight"  data-syntax="jquery"  data-syntax-theme="bootstrap" data-showTooltips="true">
+      <code>
+      <span class="comment">// Example AJAX request:</span>
+      <span class="identifier">$</span>.<span class="identifier-native">get</span>("<span class="url">demo_test.asp</span>", <span class="keyword">function</span>(<span class="parameter">data</span>, <span class="parameter">status</span>){
+          <span class="identifier-native">alert</span>("Data: " + data + "\nStatus: " + status);
+      });
+      </code>
+    </pre>
+    <b>EXAMPLE 2:</b>
+    <pre class="ft-syntax-highlight" data-syntax="jquery" data-syntax-theme="midnight" data-ui-theme="halloween">
+      <code>
+      <span class="comment">// Another AJAX request example:</span>
+      <span class="identifier">$</span>.<span class="identifier-native">ajax</span>({
+        type: 'GET',
+        url: '<span class="url">http://somewebsite.com</span>',
+        dataType: 'html',
+        timeout: <span class="unit">15000</span>,
+        <span class="identifier-native">beforeSend</span> : <span class="keyword">function</span>() {
+        },
+        <span class="identifier-native">success</span>: <span class="keyword">function</span> (<span class="parameter">html</span>) {
+        },
+        <span class="identifier-native">error</span>: <span class="keyword">function</span> () {
+        }
+      });
+      </code>
+    </pre>
+  </body>
+</html>
