@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FT-Syntax-Highlight | CSS Example</title>
+    <link rel="stylesheet" href="../../src/ft-syntax-highlight.css">
+  </head>
+  <body style="background-color: #233; color: white;">
+    <p>Right click > Select "View Page Source" to see source code.</p>
+    <b>EXAMPLE 1:</b>
+    <pre class="ft-syntax-highlight" data-syntax="css" data-syntax-theme="bootstrap" data-ui-theme="light" data-showTooltips="true">
+      <code>
+      <span class="comment">/* this an example of how to apply styles to selectors using nth-of-type pseudo class*/</span>
+      <span class="comment">/* this will apply style to all items of the selector starting at number 11 */</span>
+      <span class="identifier-native">pre</span>.<span class="identifier">ft-syntax-highlight</span> <span class="identifier-native">code</span> <span class="identifier-native">span</span>.<span class="identifier">newline</span><span class="pseudo">:nth-of-type</span>(<span class="unit">1n+11</span>)<span class="pseudo">:before</span> {
+        <span class="property">position</span>: <span class="value">relative</span>;
+        <span class="property">right</span>: <span class="unit">28px</span>;
+      }
+      </code>
+    </pre>
+    <b>EXAMPLE 2:</b>
+    <pre class="ft-syntax-highlight" data-syntax="CSS" data-syntax-theme="bootstrap" data-ui-theme="bootstrap4" data-showTooltips="true">
+    <code>
+    <span class="comment">/* this is an example of forcing a minimum text size using CSS for responsive pages */</span>
+    <span class="at-rule">@media</span> <span class="identifier">all</span> and (<span class="identifier">max-width</span>: <span class="unit">550px</span>) {
+      <span class="identifier-native">pre</span>.<span class="identifier">ft-syntax-highlight</span> {
+        <span class="comment">/*this ensures a minimum font size of 9px when the viewport is less than 550px */</span>
+        <span class="property">font-size</span>: <span class="identifier-function">calc</span>(<span class="unit">9px</span> <span class="operand">+</span> <span class="unit">0.8vw</span>);
+      }
+    }
+    </code>
+    </pre>
+  </body>
+</html>
