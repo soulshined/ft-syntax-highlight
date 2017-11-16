@@ -1,0 +1,7 @@
+Pure CSS syntax highlighting with CSS tooltips, line numbers and common-sense tagging
+
+URL: https://github.com/soulshined/ft-syntax-highlighter
+
+Core developers:
+
+- David Freer (original author) <soulshined@me.com>
