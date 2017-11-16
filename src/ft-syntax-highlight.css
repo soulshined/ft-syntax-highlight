@@ -1,0 +1,1066 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400');
+/*colors can be found here: https://www.w3schools.com/colors/colors_names.asp*/
+
+pre.ft-syntax-highlight {
+  display: block;
+  position: relative;
+  padding: 28px 0 0;
+  font-size: .85rem; letter-spacing: 0.5px; color: lightgrey;
+
+  background-color: #2d2832;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='304' height='304' viewBox='0 0 304 304' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2a5 5 0 1 0-2 0V82h64v-2h-62V21.9zm16 16a5 5 0 1 0-2 0V66h48v-2h-46V37.9zm-128 96a5 5 0 1 0-2 0V210h16v10.1a5 5 0 1 0 2 0V208h-16v-74.1zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9a5 5 0 1 0-2 0V144H53.9a5 5 0 1 0 0 2H98v-44.1zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9a5 5 0 1 0-2 0V64H80v64H69.9a5 5 0 1 0 0 2H82V66h32V37.9zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9a5 5 0 1 0-2 0V162h16v30h-16v66h48v46h2v-48h-48v-62h16v-34h-16v-10.1zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.172l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.513L175.586 80H224V21.9a5 5 0 1 1 2 0V82h-49.586L146 112.414V188.1zm16 32a5 5 0 1 1-2 0v-99.513L184.586 96H300.1a5.004 5.004 0 0 1 3.9-3.9v2.07a3.004 3.004 0 0 0 0 5.66v2.07a5.004 5.004 0 0 1-3.9-3.9H185.414L162 121.414V220.1zm-144-64a5 5 0 1 1-2 0v-3.513l48-48V48h32V0h2v50H66v55.413l-48 48v2.687zM50 53.9a5 5 0 1 0-2 0v42.686l-48 48V210h28.1a5 5 0 1 0 0-2H2v-62.586l48-48V53.9zm-16 16a5 5 0 1 0-2 0v18.686l-32 32v2.828l34-34V69.9zM12.1 32a5 5 0 1 1 0 2H9.414L0 43.414v-2.828L8.586 32H12.1zm265.8 18a5 5 0 1 1 0-2h18.686L304 40.586v2.828L297.414 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.413l16-16v2.827l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.586L40.586 194H21.9a5 5 0 1 1 0-2h19.513L66 216.586V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.598L56.598 162H37.9a5 5 0 1 1 0-2h19.502L98 200.598V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.586L48.586 178H21.9a5 5 0 1 1 0-2h27.513L82 208.586V258H53.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM34 39.793V0h-2v40.586L8.586 64H0v2h9.413L34 41.414v-1.62zM2 300.1V258h14v46h2v-48H0v46.17A3.004 3.004 0 0 1 3.83 304H5.9a5.004 5.004 0 0 0-3.9-3.9zM34 241v63h-2v-62H0v-2h34v1zM17 18h1V0h-2v16H0v2h17zm273-2V0h-2v18h16v-2h-14zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.002 5.002 0 0 1 6 97a5.002 5.002 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32a5 5 0 0 0-9.8 0h2.07a3.004 3.004 0 0 1 5.66 0h2.07zM5.9 0A5.002 5.002 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0a5 5 0 0 0 3.9 5.9V3.83A3.004 3.004 0 0 1 302.17 0h-2.07zm3.9 300.1a5.004 5.004 0 0 0-3.9 3.9h2.07a3.016 3.016 0 0 1 1.83-1.83v-2.07z' fill='%2345404b' fill-opacity='.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+pre.ft-syntax-highlight::before {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  padding: 10px 0;
+
+  text-indent: 25px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.8px;
+  content: attr(data-syntax);
+  direction: rtl;
+}
+pre.ft-syntax-highlight code {
+
+  font-family: 'Source Code Pro', monospace;
+  counter-reset: line -1;
+
+  display: block;
+  margin: -25px 0 -28px;
+  padding: 0 10px 10px 0;
+  max-height: 400px;
+  overflow: auto;
+}
+pre.ft-syntax-highlight code span.newline:before {
+  position: relative;
+  right: 20px;
+
+  color: lightgrey;
+
+  counter-increment: line;
+  content: counter(line);
+  font-weight: 200;
+}
+pre.ft-syntax-highlight code span.newline:nth-of-type(1n+11):before {
+  position: relative;
+  right: 28px;
+}
+pre.ft-syntax-highlight code span.newline:nth-of-type(1n+101):before {
+  position: relative;
+  right: 36px;
+}
+
+@media all and (max-width: 550px) {
+  pre.ft-syntax-highlight {
+    /*this ensures a minimum font size of 9px is maintained
+      when viewport is less than 550px
+      calculating against vw gives it a responsive feel*/
+    font-size: calc(9px + 0.8vw);
+  }
+}
+
+/* scrollbar customizations (not applicable to all browsers) */
+pre.ft-syntax-highlight code::-webkit-scrollbar-track {
+	background-color: rgba(0,0,0,0);
+}
+pre.ft-syntax-highlight code::-webkit-scrollbar {
+	width: 10px; height: 10px;
+  border-radius: 10px;
+	background-color: rgba(255,255,255,0.4);
+}
+pre.ft-syntax-highlight code::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(255,255,255,0.5);
+}
+pre.ft-syntax-highlight[data-ui-theme="bootstrap4"] code::-webkit-scrollbar-thumb,
+pre.ft-syntax-highlight[data-ui-theme="burberry"] code::-webkit-scrollbar-thumb,
+pre.ft-syntax-highlight[data-ui-theme="light"] code::-webkit-scrollbar-thumb,
+pre.ft-syntax-highlight[data-ui-theme="simple"] code::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,0.4);
+}
+pre.ft-syntax-highlight[data-ui-theme="bootstrap4"] code::-webkit-scrollbar,
+pre.ft-syntax-highlight[data-ui-theme="burberry"] code::-webkit-scrollbar,
+pre.ft-syntax-highlight[data-ui-theme="light"] code::-webkit-scrollbar,
+pre.ft-syntax-highlight[data-ui-theme="simple"] code::-webkit-scrollbar {
+	background-color: rgba(0,0,0,0.4);
+}
+
+/*Tooltips*/
+pre.ft-syntax-highlight[data-showTooltips="true" i] code span:not(.newline):not(.url) {
+  position: relative;
+	cursor: help;
+}
+pre.ft-syntax-highlight[data-showTooltips="true" i] code span:not(.newline)::before,
+pre.ft-syntax-highlight[data-showTooltips="true" i] code span:not(.newline)::after {
+  text-transform: none;
+  font-size: 0.95em;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  -webkit-animation: tooltips-vert 300ms ease-out forwards;
+     -moz-animation: tooltips-vert 300ms ease-out forwards;
+       -o-animation: tooltips-vert 300ms ease-out forwards;
+          animation: tooltips-vert 300ms ease-out forwards;
+	left: 50%;
+  transform: translate(-50%, -0.5em);
+}
+pre.ft-syntax-highlight[data-showTooltips="true" i] code span:not(.newline)::before {
+  content: '';
+  border: 8px solid transparent;
+  z-index: 1001;
+	bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: ghostwhite;
+}
+pre.ft-syntax-highlight[data-showTooltips="true" i] code span:not(.newline)::after {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: ghostwhite;
+  color: black;
+  z-index: 1000;
+	bottom: calc(100% + 8px);
+}
+pre.ft-syntax-highlight[data-showTooltips="true" i] code span:not(.newline):hover::before,
+pre.ft-syntax-highlight[data-showTooltips="true" i] code span:not(.newline):hover::after {
+  display: block;
+}
+ /*=> tooltip text*/
+pre.ft-syntax-highlight[data-showTooltips="true" i] code span.comment::after {
+	content: 'comment';
+}
+pre.ft-syntax-highlight[data-showTooltips="true" i] code span.value::after {
+	content: 'value';
+}
+
+/* TOOLTIP KEYFRAMES */
+@-webkit-keyframes tooltips-vert {
+  to { opacity: 0.9; transform: translate(-50%, 0); }
+}
+@-moz-keyframes tooltips-vert {
+  to { opacity: 0.9; transform: translate(-50%, 0);/ }
+}
+@-o-keyframes tooltips-vert {
+  to { opacity: 0.9; transform: translate(-50%, 0); }
+}
+@keyframes tooltips-vert {
+  to { opacity: 0.9; transform: translate(-50%, 0); }
+}
+
+/* UI SYNTAX THEMES */
+/*  => UI themes : Bootstrap 4 theme */
+pre.ft-syntax-highlight[data-ui-theme="bootstrap4" i] {
+  background-color: white;
+  background-image: url();
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  color: #888;
+}
+pre.ft-syntax-highlight[data-ui-theme="bootstrap4" i]::before {
+  direction: ltr;
+  font-weight: normal;
+  color: black;
+  background-color: #f7f7f9;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+pre.ft-syntax-highlight[data-ui-theme="bootstrap4" i] code {
+  margin-top: 0;
+}
+pre.ft-syntax-highlight[data-ui-theme="bootstrap4" i] code span.comment {
+  color: rgba(160,160,160, 1);
+  font-weight: 200;
+}
+pre.ft-syntax-highlight[data-ui-theme="bootstrap4" i] code span.newline:before {
+  color: black;
+}
+pre.ft-syntax-highlight[data-ui-theme="bootstrap4" i] code span.value {
+  color: dimgray;
+}
+pre.ft-syntax-highlight[data-ui-theme="bootstrap4" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::before {
+  border-top-color: #333;
+}
+pre.ft-syntax-highlight[data-ui-theme="bootstrap4" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::after {
+  background: #333;
+  color: ghostwhite;
+}
+/*  => UI themes : Burberry theme */
+pre.ft-syntax-highlight[data-ui-theme="burberry" i] {
+  background-color: beige;
+  background-image: url();
+  border: 1px solid #797C73;
+  border-radius: .25rem;
+  color: #888;
+}
+pre.ft-syntax-highlight[data-ui-theme="burberry" i]::before {
+  direction: ltr;
+  font-weight: bold;
+  color: white;
+  border-bottom: 1px solid #797C73;
+  background-color: hsl(34, 53%, 82%);
+  background-image: repeating-linear-gradient(
+      45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+      hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+      hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+      hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+      hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+      hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+      ),
+      repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+      hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+      hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+      hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+      hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+      hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px);
+}
+pre.ft-syntax-highlight[data-ui-theme="burberry" i] code {
+  margin-top: 0;
+}
+pre.ft-syntax-highlight[data-ui-theme="burberry" i] code span.comment {
+  color: rgba(160,160,160, 1);
+  font-weight: 200;
+}
+pre.ft-syntax-highlight[data-ui-theme="burberry" i] code span.newline:before {
+  color: #797C73;
+}
+pre.ft-syntax-highlight[data-ui-theme="burberry" i] code span.value {
+  color: dimgray;
+}
+pre.ft-syntax-highlight[data-ui-theme="burberry" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::before {
+  border-top-color: #404F4F;
+}
+pre.ft-syntax-highlight[data-ui-theme="burberry" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::after {
+  background: #404F4F;
+  color: ghostwhite;
+}
+/*  => UI themes : christmas theme */
+pre.ft-syntax-highlight[data-ui-theme="christmas" i] {
+  background-color: seagreen;
+  border: 1px solid rgba(255,0,0,.3);
+  border-radius: .25rem;
+  color: #DDD;
+  background: radial-gradient(circle, transparent 20%, seagreen 20%, seagreen 80%, transparent 80%, transparent),
+              radial-gradient(circle, transparent 20%, seagreen 20%, seagreen 80%, transparent 80%, transparent) 50px 50px,
+              linear-gradient(rgba(255,250,250,0.035) 8px, transparent 8px) 0 -4px,
+              linear-gradient(90deg, rgba(255,250,250,0.035) 8px, transparent 8px) -4px 0;
+              background-color: seagreen;
+              background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+pre.ft-syntax-highlight[data-ui-theme="christmas" i]::before {
+  direction: ltr;
+  font-weight: bold;
+  color: black;
+  border-bottom: 1px solid red;
+  background: repeating-linear-gradient(
+    45deg,
+    #f4f4d7,
+    #f4f4d7 10px,
+    red 10px,
+    #f4f4d7 15px,
+    red 20px,
+    #f4f4d7 20px,
+    #f4f4d7 40px,
+    red 40px,
+    red 60px,
+    #f4f4d7 60px,
+    #f4f4d7 90px,
+    red 90px,
+    red 110px
+  );
+}
+pre.ft-syntax-highlight[data-ui-theme="christmas" i] code {
+  margin-top: 0;
+}
+pre.ft-syntax-highlight[data-ui-theme="christmas" i] code span.comment {
+  color: rgba(200,200,200, 1);
+  font-weight: 200;
+}
+pre.ft-syntax-highlight[data-ui-theme="christmas" i] code span.newline:before {
+  color: white;
+}
+pre.ft-syntax-highlight[data-ui-theme="christmas" i] code span.value {
+  color: dimgray;
+}
+pre.ft-syntax-highlight[data-ui-theme="christmas" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::before {
+  border-top-color: tomato;
+}
+pre.ft-syntax-highlight[data-ui-theme="christmas" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::after {
+  background: tomato;
+  color: ghostwhite;
+}
+/*  => UI themes : halloween theme */
+pre.ft-syntax-highlight[data-ui-theme="halloween" i] {
+  background-color: #222;
+  border: 1px solid rgba(255,165,0,1);
+  border-radius: .25rem;
+  color: #888;
+  background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M82.42 180h-1.415L0 98.995v-2.827L6.167 90 0 83.833V81.004L81.005 0h2.827L90 6.167 96.167 0H98.996L180 81.005v2.827L173.833 90 180 96.167V98.996L98.995 180h-2.827L90 173.833 83.833 180H82.42zm0-1.414L1.413 97.58 8.994 90l-7.58-7.58L82.42 1.413 90 8.994l7.58-7.58 81.006 81.005-7.58 7.58 7.58 7.58-81.005 81.006-7.58-7.58-7.58 7.58zM175.196 0h-25.832c1.033 2.924 2.616 5.59 4.625 7.868C152.145 9.682 151 12.208 151 15c0 5.523 4.477 10 10 10 1.657 0 3 1.343 3 3v4h16V0h-4.803c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6s-6-2.686-6-6c0-1.093.292-2.117.803-3h10.394-13.685C161.18.938 161 1.948 161 3v4c-4.418 0-8 3.582-8 8s3.582 8 8 8c2.76 0 5 2.24 5 5v2h4v-4h2v4h4v-4h2v4h2V0h-4.803zm-15.783 0c-.27.954-.414 1.96-.414 3v2.2c-1.25.254-2.414.74-3.447 1.412-1.716-1.93-3.098-4.164-4.054-6.612h7.914zM180 17h-3l2.143-10H180v10zm-30.635 163c-.884-2.502-1.365-5.195-1.365-8 0-13.255 10.748-24 23.99-24H180v32h-30.635zm12.147 0c.5-1.416 1.345-2.67 2.434-3.66l-1.345-1.48c-1.498 1.364-2.62 3.136-3.186 5.14H151.5c-.97-2.48-1.5-5.177-1.5-8 0-12.15 9.84-22 22-22h8v30h-18.488zm13.685 0c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 148h8.01C21.26 148 32 158.742 32 172c0 2.805-.48 5.498-1.366 8H0v-32zm0 2h8c12.15 0 22 9.847 22 22 0 2.822-.53 5.52-1.5 8h-7.914c-.567-2.004-1.688-3.776-3.187-5.14l-1.346 1.48c1.09.99 1.933 2.244 2.434 3.66H0v-30zm15.197 30c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 32h16v-4c0-1.657 1.343-3 3-3 5.523 0 10-4.477 10-10 0-2.794-1.145-5.32-2.992-7.134C28.018 5.586 29.6 2.924 30.634 0H0v32zm0-2h2v-4h2v4h4v-4h2v4h4v-2c0-2.76 2.24-5 5-5 4.418 0 8-3.582 8-8s-3.582-8-8-8V3c0-1.052-.18-2.062-.512-3H0v30zM28.5 0c-.954 2.448-2.335 4.683-4.05 6.613-1.035-.672-2.2-1.16-3.45-1.413V3c0-1.04-.144-2.046-.414-3H28.5zM0 17h3L.857 7H0v10zM15.197 0c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6S4 6.314 4 3c0-1.093.292-2.117.803-3h10.394zM109 115c-1.657 0-3 1.343-3 3v4H74v-4c0-1.657-1.343-3-3-3-5.523 0-10-4.477-10-10 0-2.793 1.145-5.318 2.99-7.132C60.262 93.638 58 88.084 58 82c0-13.255 10.748-24 23.99-24h16.02C111.26 58 122 68.742 122 82c0 6.082-2.263 11.636-5.992 15.866C117.855 99.68 119 102.206 119 105c0 5.523-4.477 10-10 10zm0-2c-2.76 0-5 2.24-5 5v2h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-2c0-2.76-2.24-5-5-5-4.418 0-8-3.582-8-8s3.582-8 8-8v-4c0-2.64 1.136-5.013 2.946-6.66L72.6 84.86C70.39 86.874 69 89.775 69 93v2.2c-1.25.254-2.414.74-3.447 1.412C62.098 92.727 60 87.61 60 82c0-12.15 9.84-22 22-22h16c12.15 0 22 9.847 22 22 0 5.61-2.097 10.728-5.55 14.613-1.035-.672-2.2-1.16-3.45-1.413V93c0-3.226-1.39-6.127-3.6-8.14l-1.346 1.48C107.864 87.987 109 90.36 109 93v4c4.418 0 8 3.582 8 8s-3.582 8-8 8zM90.857 97L93 107h-6l2.143-10h1.714zM80 99c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm20 0c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6z' fill='%239C92AC' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+pre.ft-syntax-highlight[data-ui-theme="halloween" i]::before {
+  direction: ltr;
+  font-weight: normal;
+  color: white;
+  background-color: orange;
+  border-bottom: 1px solid orange;
+}
+pre.ft-syntax-highlight[data-ui-theme="halloween" i] code {
+  margin-top: 0;
+}
+pre.ft-syntax-highlight[data-ui-theme="halloween" i] code span.comment {
+  color: rgba(160,160,160, 1);
+  font-weight: 200;
+}
+pre.ft-syntax-highlight[data-ui-theme="halloween" i] code span.newline:before {
+  color: orange;
+}
+pre.ft-syntax-highlight[data-ui-theme="halloween" i] code span.value {
+  color: dimgray;
+}
+pre.ft-syntax-highlight[data-ui-theme="halloween" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::before {
+  border-top-color: orange;
+}
+pre.ft-syntax-highlight[data-ui-theme="halloween" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::after {
+  background: orange;
+  color: white;
+}
+/*  => UI themes : midnight theme */
+pre.ft-syntax-highlight[data-ui-theme="midnight" i] {
+  border: 1px solid #b299e6;
+  border-radius: .25rem;
+  color: #888;
+  background-color: black;
+  background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+                    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+                    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+                    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+                    background-position: 0 -80px, 40px -20px, 130px 200px, 70px 20px;
+}
+pre.ft-syntax-highlight[data-ui-theme="midnight" i]::before {
+  direction: ltr;
+  font-weight: normal;
+  color: white;
+  background-color: #b299e6;
+  border-bottom: 1px solid #b299e6;
+}
+pre.ft-syntax-highlight[data-ui-theme="midnight" i] code {
+  margin-top: 0;
+}
+pre.ft-syntax-highlight[data-ui-theme="midnight" i] code span.comment {
+  color: rgba(160,160,160, 1);
+  font-weight: 200;
+}
+pre.ft-syntax-highlight[data-ui-theme="midnight" i] code span.newline:before {
+  color: thistle;
+}
+pre.ft-syntax-highlight[data-ui-theme="midnight" i] code span.value {
+  color: dimgray;
+}
+pre.ft-syntax-highlight[data-ui-theme="midnight" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::before {
+  border-top-color: #b299e6;
+}
+pre.ft-syntax-highlight[data-ui-theme="midnight" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::after {
+  background: #b299e6;
+  color: snow;
+}
+/*  => UI themes : Light theme */
+pre.ft-syntax-highlight[data-ui-theme="light" i] {
+  color: black;
+  font-weight: 400;
+  background-color: ghostwhite;
+  box-shadow: 1px 0px 2px darkgrey;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='304' height='304' viewBox='0 0 304 304' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2a5 5 0 1 0-2 0V82h64v-2h-62V21.9zm16 16a5 5 0 1 0-2 0V66h48v-2h-46V37.9zm-128 96a5 5 0 1 0-2 0V210h16v10.1a5 5 0 1 0 2 0V208h-16v-74.1zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9a5 5 0 1 0-2 0V144H53.9a5 5 0 1 0 0 2H98v-44.1zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9a5 5 0 1 0-2 0V64H80v64H69.9a5 5 0 1 0 0 2H82V66h32V37.9zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9a5 5 0 1 0-2 0V162h16v30h-16v66h48v46h2v-48h-48v-62h16v-34h-16v-10.1zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.172l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.513L175.586 80H224V21.9a5 5 0 1 1 2 0V82h-49.586L146 112.414V188.1zm16 32a5 5 0 1 1-2 0v-99.513L184.586 96H300.1a5.004 5.004 0 0 1 3.9-3.9v2.07a3.004 3.004 0 0 0 0 5.66v2.07a5.004 5.004 0 0 1-3.9-3.9H185.414L162 121.414V220.1zm-144-64a5 5 0 1 1-2 0v-3.513l48-48V48h32V0h2v50H66v55.413l-48 48v2.687zM50 53.9a5 5 0 1 0-2 0v42.686l-48 48V210h28.1a5 5 0 1 0 0-2H2v-62.586l48-48V53.9zm-16 16a5 5 0 1 0-2 0v18.686l-32 32v2.828l34-34V69.9zM12.1 32a5 5 0 1 1 0 2H9.414L0 43.414v-2.828L8.586 32H12.1zm265.8 18a5 5 0 1 1 0-2h18.686L304 40.586v2.828L297.414 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.413l16-16v2.827l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.586L40.586 194H21.9a5 5 0 1 1 0-2h19.513L66 216.586V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.598L56.598 162H37.9a5 5 0 1 1 0-2h19.502L98 200.598V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.586L48.586 178H21.9a5 5 0 1 1 0-2h27.513L82 208.586V258H53.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM34 39.793V0h-2v40.586L8.586 64H0v2h9.413L34 41.414v-1.62zM2 300.1V258h14v46h2v-48H0v46.17A3.004 3.004 0 0 1 3.83 304H5.9a5.004 5.004 0 0 0-3.9-3.9zM34 241v63h-2v-62H0v-2h34v1zM17 18h1V0h-2v16H0v2h17zm273-2V0h-2v18h16v-2h-14zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.002 5.002 0 0 1 6 97a5.002 5.002 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32a5 5 0 0 0-9.8 0h2.07a3.004 3.004 0 0 1 5.66 0h2.07zM5.9 0A5.002 5.002 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0a5 5 0 0 0 3.9 5.9V3.83A3.004 3.004 0 0 1 302.17 0h-2.07zm3.9 300.1a5.004 5.004 0 0 0-3.9 3.9h2.07a3.016 3.016 0 0 1 1.83-1.83v-2.07z' fill='%2345404b' fill-opacity='.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+pre.ft-syntax-highlight[data-ui-theme="light" i] code span.newline:before {
+  color: black;
+}
+pre.ft-syntax-highlight[data-ui-theme="light" i] code span.comment {
+  color: rgba(160,160,160, 1);
+  font-weight: 200;
+}
+pre.ft-syntax-highlight[data-ui-theme="light" i] code span.value {
+  color: dimgray;
+}
+pre.ft-syntax-highlight[data-ui-theme="light" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::before {
+  border-top-color: #333;
+}
+pre.ft-syntax-highlight[data-ui-theme="light" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::after {
+  background: #333;
+  color: ghostwhite;
+}
+/*  => UI themes : Simple theme */
+pre.ft-syntax-highlight[data-ui-theme="simple" i] {
+  color: darkslategray;
+  background-color: 	rgb(235, 235, 235);
+  border-radius: 5px;
+  box-shadow: 1px 0px 2px darkgrey;
+  background-image: url();
+}
+pre.ft-syntax-highlight[data-ui-theme="simple" i] code span.newline:before {
+  color: peru;
+}
+pre.ft-syntax-highlight[data-ui-theme="simple" i] code span.comment {
+  color: rgba(110,110,110, 1) !important;
+  font-weight: 200;
+}
+pre.ft-syntax-highlight[data-ui-theme="simple" i] code span.value {
+  color: dimgray !important;
+}
+pre.ft-syntax-highlight[data-ui-theme="simple" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::before {
+  border-top-color: #333;
+}
+pre.ft-syntax-highlight[data-ui-theme="simple" i][data-showTooltips="true" i] code span:not(.newline):not(.url)::after {
+  background: #333;
+  color: ghostwhite;
+}
+
+/*checking for nested <pre>s > although, this isn't a deep check
+this is all we are going to consider altering at this time.
+it's up to users to not nest <pre>s/<code>s*/
+
+/*nesting <pre>s cause interferance because of UI themes.
+If a nested <pre> is not the same theme it will create an
+unwanted, unpolished interface*/
+[class*='ft-syntax-highlight'] > * > pre {
+  background-color: transparent;
+  box-shadow: none;
+  background-image: url();
+  color: inherit;
+}
+
+/* SYNTAX SYNTAX THEMES */
+  /*Universal styles*/
+pre.ft-syntax-highlight code span.comment {
+  color: rgba(240,240,240, 0.3);
+  font-weight: 200;
+}
+pre.ft-syntax-highlight code span.url {
+  text-decoration: underline;
+}
+pre.ft-syntax-highlight code span.value {
+  color: rgb(180,180,180);
+  font-weight: 300;
+}
+/*    => syntax theme: bootstrap4 */
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.boolean,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.identifier-constant,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.identifier-enum,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.identifier-structure,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.null,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.unit {
+ color: tomato;
+}
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.identifier,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.identifier-function,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.identifier-udf {
+ color: #4f9fcf;
+}
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.identifier-class,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.identifier-sub,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.variable  {
+ color: #0B9C5E;
+}
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.object,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.property {
+ color: inherit;
+}
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.keyword {
+  color: #70b5db;
+}
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.identifier-native,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.identifier-namespace {
+ color: #2f6f9f;
+}
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.operand {
+ color: #70b5db;
+}
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.typecast {
+ color: mediumblue;
+}
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.url,
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i] code span.value {
+  color: orangered;
+}
+/*    => syntax theme: midnight */
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.boolean,
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.identifier-constant,
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.identifier-enum,
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.identifier-structure,
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.null,
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.unit {
+ color: #db7970;
+}
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.identifier,
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.identifier-function,
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.identifier-udf {
+ color: #ceafce;
+}
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.identifier-class,
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.identifier-sub  {
+ color: #93db70;
+}
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.url {
+  color: #c9db70;
+}
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.object,
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.property {
+ color: palegoldenrod;
+}
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.keyword {
+  color: #70b5db;
+}
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.identifier-native,
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.identifier-namespace {
+ color: palevioletred;
+}
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.operand {
+ color: #70b5db;
+}
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.typecast {
+ color: violet;
+}
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i] code span.variable {
+  color: inherit;
+}
+/*    => syntax theme: one-dark*/
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.boolean,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.identifier-constant,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.identifier-enum,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.identifier-structure,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.null,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.unit {
+ color: goldenrod;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.identifier,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.identifier-function,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.identifier-udf {
+ color: #3b94d9;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.identifier-class,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.identifier-sub  {
+ color: #f8da7b;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.identifier-native {
+  color: lightseagreen;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.object,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.property {
+ color: tomato;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.keyword,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.identifier-namespace {
+ color: #d979c4;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.operand,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.url {
+ color: MediumTurquoise;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.typecast {
+ color: violet;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i] code span.variable {
+  color: inherit;
+}
+/*    => syntax theme: one-light */
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.boolean,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.identifier-constant,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.identifier-enum,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.identifier-structure,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.null,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.unit {
+ color: orange;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.identifier,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.identifier-function,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.identifier-udf {
+ color: #16C07B;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.identifier-class,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.identifier-sub  {
+ color: slateblue;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.identifier-native,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.url {
+  color: #6BBCFF;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.object,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.property {
+ color: tan;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.keyword,
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.identifier-namespace {
+ color: #de6f5b;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.operand {
+ color: MediumTurquoise;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.typecast {
+ color: violet;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i] code span.variable {
+  color: inherit;
+}
+/*    => syntax theme: simple */
+pre.ft-syntax-highlight[data-syntax-theme="simple" i] * {
+  color: darkslategray !important;
+  font-weight: 400;
+}
+pre.ft-syntax-highlight[data-syntax-theme="simple" i] code span.newline::before {
+  color: darkslategray !important;
+}
+/*    => syntax theme: vbgreen */
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.comment {
+  color: #4E9C3A;
+  font-weight: 400;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.value {
+  color: sandybrown;
+  font-weight: 200;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.boolean,
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.identifier-namespace,
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.keyword,
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.null {
+  color: #3C8DCC;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.identifier {
+  color: #5AAFFC;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.identifier-native {
+  color: #cc7b3c;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.identifier-class,
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.identifier-structure,
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.identifier-sub {
+  color: #3CBEA1;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.identifier-constant,
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.identifier-enum,
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.unit {
+  color: #B8D288;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.operand {
+ color: #70b5db;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.url {
+  color: #3C8DCC;
+  text-decoration: underline;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.typecast {
+  color: blueviolet;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i] code span.variable {
+  color: inherit;
+}
+
+/* HTML OVERRIDES */
+/*    => HTML TOOLTIPS */
+pre.ft-syntax-highlight[data-syntax="html" i][data-showTooltips="true" i] code span.identifier::after {
+  content: 'selector';
+}
+pre.ft-syntax-highlight[data-syntax="html" i][data-showTooltips="true" i] code span.identifier-native::after {
+  content: 'selector-native';
+}
+/*    => HTML SYNTAX THEMES */
+/*      => html syntax theme: one-dark */
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="html" i] code span.identifier {
+  color: orange;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="html" i] code span.identifier-native {
+  color: tomato;
+}
+
+/* CSS OVERRIDES */
+/*    => CSS TOOLTIPS */
+pre.ft-syntax-highlight[data-syntax="css" i][data-showTooltips="true" i] code span.at-rule::after {
+  content: "at-rule";
+}
+pre.ft-syntax-highlight[data-syntax="css" i][data-showTooltips="true" i] code span.identifier::after {
+  content: "selector";
+}
+pre.ft-syntax-highlight[data-syntax="css" i][data-showTooltips="true" i] code span.identifier-function::after {
+  content: "function"
+}
+pre.ft-syntax-highlight[data-syntax="css" i][data-showTooltips="true" i] code span.identifier-native::after {
+  content: "selector-native"
+}
+pre.ft-syntax-highlight[data-syntax="css" i][data-showTooltips="true" i] code span.operand::after {
+  content: "operand"
+}
+pre.ft-syntax-highlight[data-syntax="css" i][data-showTooltips="true" i] code span.property::after {
+  content: "property";
+}
+pre.ft-syntax-highlight[data-syntax="css" i][data-showTooltips="true" i] code span.pseudo::after {
+  content: "pseudo";
+}
+pre.ft-syntax-highlight[data-syntax="css" i][data-showTooltips="true" i] code span.unit::after {
+  content: "unit";
+}
+pre.ft-syntax-highlight[data-syntax="css" i][data-showTooltips="true" i] code span.variable::after {
+  content: "variable";
+}
+/*    => CSS SYNTAX THEMES */
+/*      => css syntax theme: bootstrap */
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i][data-syntax="css" i] code span.at-rule {
+  color: #0B9C5E;
+}
+/*      => css syntax theme: one-dark */
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="css" i] code span.at-rule {
+  color: violet;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="css" i] code span.identifier {
+  color: orange;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="css" i] code span.identifier-function,
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="css" i] code span.property {
+  color: #96cbfe;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="css" i] code span.identifier-native {
+  color: tomato;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="css" i] code span.pseudo {
+  color: #FCBB7E;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="css" i] code span.variable {
+  color: tomato;
+}
+/*      => css syntax theme: one-light */
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i][data-syntax="css" i] code span.at-rule {
+  color: #FF6090;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i][data-syntax="css" i] code span.identifier-function {
+  color: tan;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i][data-syntax="css" i] code span.pseudo {
+  color: peru;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i][data-syntax="css" i] code span.variable {
+  color: tomato;
+}
+/*      => css syntax theme: midnight */
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i][data-syntax="css" i] code span.at-rule {
+  color: #70b5db;
+}
+/*      => css syntax theme: vbgreen */
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i][data-syntax="css" i] code span.at-rule,
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i][data-syntax="css" i] code span.identifier-function {
+  color: mediumpurple;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i][data-syntax="css" i] code span.variable {
+  color: orangered;
+}
+
+/* JAVASCRIPT OVERRIDES */
+/*    => JAVASCRIPT TOOLTIPS */
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.boolean::after {
+	content: 'boolean';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.identifier::after {
+  content: 'identifier';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.identifier-class::after {
+  content: 'indentifier-class';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.identifier-constant::after {
+  content: 'indentifier-constant';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.identifier-native::after {
+  content: 'identifier-native';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.identifier-udf::after {
+  content: 'identifier-udf';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.keyword::after {
+  content: 'keyword';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.null::after {
+	content: 'null';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.unit::after {
+  content: 'unit';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.object::after {
+  content: 'object';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.operand::after {
+  content: 'operand';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.parameter::after {
+  content: 'parameter';
+}
+pre.ft-syntax-highlight[data-syntax="js" i][data-showTooltips="true" i] code span.property::after {
+  content: 'property';
+}
+
+/* JQUERY OVERRIDES */
+/*    => JQUERY TOOLTIPS */
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.boolean::after {
+  content: 'boolean';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.identifier::after {
+  content: 'identifier';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.identifier-class::after {
+  content: 'indentifier-class';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.identifier-constant::after {
+  content: 'indentifier-constant';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.identifier-native::after {
+  content: 'identifier-native';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.identifier-udf::after {
+  content: 'identifier-udf';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.keyword::after {
+  content: 'keyword';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.null::after {
+  content: 'null';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.unit::after {
+  content: 'unit';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.object::after {
+  content: 'object';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.operand::after {
+  content: 'operand';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.parameter::after {
+  content: 'parameter';
+}
+pre.ft-syntax-highlight[data-syntax="jquery" i][data-showTooltips="true" i] code span.property::after {
+  content: 'property';
+}
+
+/* PHP OVERRIDES */
+/*    => PHP TOOLTIPS */
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.boolean::after {
+	content: 'boolean';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.identifier::after {
+  content: 'identifier';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.identifier-class::after {
+  content: 'indentifier-class';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.identifier-constant::after {
+  content: 'indentifier-constant';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.identifier-native::after {
+  content: 'identifier-native';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.identifier-udf::after {
+  content: 'identifier-udf';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.keyword::after {
+  content: 'keyword';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.null::after {
+	content: 'null';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.unit::after {
+  content: 'unit';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.object::after {
+  content: 'object';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.operand::after {
+  content: 'operand';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.parameter::after {
+  content: 'parameter';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.property::after {
+  content: 'property';
+}
+pre.ft-syntax-highlight[data-syntax="php" i][data-showTooltips="true" i] code span.typecast::after {
+  content: 'typecast';
+}
+/*    => PHP SYNTAX THEMES */
+/*      => php syntax theme: one-dark */
+pre.ft-syntax-highlight[data-syntax="php" i][data-syntax-theme="one-dark" i] code span.identifier {
+  color: tomato;
+}
+
+/* PYTHON OVERRIDES */
+/*    => PYTHON TOOLTIPS */
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.boolean::after {
+  content: 'boolean';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.identifier::after {
+  content: 'identifier';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.identifier-class::after {
+  content: 'identifier-class';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.identifier-constant::after {
+  content: 'identifier-constant';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.identifier-native::after {
+  content: 'identifier-native';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.identifier-udf::after {
+  content: 'identifier-udf';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.keyword::after {
+  content: 'keyword';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.null::after {
+  content: 'null';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.unit::after {
+  content: 'unit';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.object::after {
+  content: 'object';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.operand::after {
+  content: 'operand';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.parameter::after {
+  content: 'parameter';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.property::after {
+  content: 'property';
+}
+pre.ft-syntax-highlight[data-syntax="python" i][data-showTooltips="true" i] code span.variable::after {
+	content: 'variable';
+}
+
+/* VB OVERRIDES */
+/*    => VB TOOLTIPS */
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.boolean::after {
+	content: 'boolean';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.identifier::after {
+	content: 'identifier';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.identifier-class::after {
+	content: 'identifier-class';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.identifier-constant::after {
+	content: 'identifier-constant';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.identifier-enum::after {
+	content: 'identifier-enum';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.identifier-function::after {
+	content: 'identifier-function';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.identifier-namespace::after {
+	content: 'identifier-namespace';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.identifier-structure::after {
+	content: 'identifier-structure';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.identifier-sub::after {
+	content: 'identifier-sub';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.keyword::after {
+	content: 'keyword';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.null::after {
+	content: 'null';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.operand::after {
+	content: 'operand';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.parameter::after {
+	content: 'parameter';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.property::after {
+	content: 'property';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.typecast::after {
+	content: 'typecast';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.unit::after {
+	content: 'unit';
+}
+pre.ft-syntax-highlight[data-syntax="vb" i][data-showTooltips="true" i] code span.variable::after {
+	content: 'variable';
+}
+/*    => VB SYNTAX THEMES */
+/*      => VB theme: bootstrap */
+pre.ft-syntax-highlight[data-syntax="vb" i][data-syntax-theme="bootstrap" i] code span.variable {
+  color: inherit;
+}
+/*      => VB theme: one-dark */
+pre.ft-syntax-highlight[data-syntax="vb" i][data-syntax-theme="one-dark" i] code span.identifier-sub {
+  color: #3b94d9;
+}
+/*      => VB theme: one-light */
+pre.ft-syntax-highlight[data-syntax="vb" i][data-syntax-theme="one-light" i] code span.keyword {
+  color: #6BBCFF;
+}
+
+/* XML OVERRIDES */
+/*    => XML TOOLTIPS */
+pre.ft-syntax-highlight[data-syntax="xml" i][data-showTooltips="true" i] code span.attribute::after {
+  content: "attribute";
+}
+pre.ft-syntax-highlight[data-syntax="xml" i][data-showTooltips="true" i] code span.identifier::after {
+  content: "element";
+}
+pre.ft-syntax-highlight[data-syntax="xml" i][data-showTooltips="true" i] code span.identifier-namespace::after {
+  content: "namespace";
+}
+/*    => XML SYNTAX THEMES */
+/*      => XML syntax theme: bootstrap */
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i][data-syntax="xml" i] code span.attribute {
+  color: #4f9fcf;
+}
+pre.ft-syntax-highlight[data-syntax-theme="bootstrap" i][data-syntax="xml" i] code span.identifier {
+  color:  #2f6f9f;
+}
+/*      => XML syntax theme: one-dark */
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="xml" i] code span.attribute {
+  color: orange;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="xml" i] code span.identifier {
+  color: tomato;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-dark" i][data-syntax="xml" i] code span.identifier-namespace {
+  color: coral;
+}
+/*      => XML syntax theme: one-light */
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i][data-syntax="xml" i] code span.attribute {
+  color: #16C07B;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i][data-syntax="xml" i] code span.identifier {
+  color: #6BBCFF;
+}
+pre.ft-syntax-highlight[data-syntax-theme="one-light" i][data-syntax="xml" i] code span.identifier-namespace {
+  color: #8ac1ff;
+}
+/*      => XML syntax theme: midnight */
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i][data-syntax="xml" i] code span.attribute {
+  color: thistle;
+}
+pre.ft-syntax-highlight[data-syntax-theme="midnight" i][data-syntax="xml" i] code span.identifier {
+  color: palevioletred;
+}
+/*      => XML syntax theme: vbgreen */
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i][data-syntax="xml" i] code span.attribute {
+  color: #085A99;
+}
+pre.ft-syntax-highlight[data-syntax-theme="vbgreen" i][data-syntax="xml" i] code span.identifier {
+  color: #3C8DCC;
+}
