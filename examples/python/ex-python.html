@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FT-Syntax-Highlight | PYTHON Example</title>
+    <link rel="stylesheet" href="../../src/ft-syntax-highlight.css">
+  </head>
+  <body>
+    <p>Right click > Select "View Page Source" to see source code.</p>
+    <b>EXAMPLE 1:</b>
+    <pre class="ft-syntax-highlight" data-syntax="python" data-syntax-theme="vbgreen" data-showTooltips="true">
+      <code>
+      <span class="comment">#Example Python class</span>
+      <span class="keyword">class</span> <span class="identifier-class">Reverse</span>:
+          <span class="comment">#Iterator for looping over a sequence backwards.</span>
+          <span class="keyword">def</span> <span class="identifier-native">__init__</span>(<span class="parameter">self</span>, <span class="parameter">data</span>):
+              <span class="identifier">self</span>.<span class="property">data</span> = data
+              <span class="identifier">self</span>.<span class="property">index</span> = <span class="identifier-native">len</span>(data)
+
+          <span class="keyword">def</span> <span class="identifier-native">__iter__</span>(<span class="parameter">self</span>):
+              <span class="keyword">return</span> <span class="identifier">self</span>
+
+          <span class="keyword">def</span> <span class="identifier-native">__next__</span>(<span class="parameter">self</span>):
+              <span class="keyword">if</span> <span class="identifier">self</span>.<span class="property">index</span> <span class="operand">==</span> <span class="unit">0</span>:
+                  <span class="keyword">raise</span> <span class="identifier-native">StopIteration</span>
+              <span class="identifier">self</span>.<span class="property">index</span> = <span class="identifier">self</span>.<span class="property">index</span> - <span class="unit">1</span>
+              <span class="keyword">return</span> <span class="identifier">self</span>.<span class="property">data</span>[<span class="identifier">self</span>.<span class="property">index</span>]
+
+      <span class="comment">#Example output</span>
+      >>> rev = Reverse('spam')
+      >>> iter(rev)
+      <__main__.Reverse object at 0x00A1DB50>
+      >>> for char in rev:
+      ...     print(char)
+      ...
+      m
+      a
+      p
+      s
+      </code>
+    </pre>
+    <pre class="ft-syntax-highlight" data-syntax="python" data-syntax-theme="midnight" data-ui-theme="halloween" data-showTooltips="true">
+      <code>
+      <span class="comment">#Example Python clamp function</span>
+      <span class="keyword">def</span> <span class="identifier-udf">clamp</span>(<span class="parameter">num</span>, <span class="parameter">smallest</span>, <span class="parameter">largest</span>):
+          <span class="keyword">return</span> <span class="identifier-native">max</span>(smallest, <span class="identifier-native">min</span>(num, largest))
+      </code>
+    </pre>
+  </body>
+</html>
