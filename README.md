@@ -151,33 +151,7 @@ See a complete list of out-of-the-box themes [here](examples#ui-themes)
   - VB [[Supported Tags]](examples/vb#supported-tags) [[Examples]](examples/vb#examples)
     
 **BROWSERS**
-All classes and pseudo classes are compliant with all major browsers. Any `@media queries` or `@keyframes` are deduced to fundamental implementation (also browser specific). However, some browsers don't support some features, things like scroll bar styling and repeated linear gradients may look different on some browsers. 
-
-Browser | Supported
---- | ---
-![Chrome][3] Mobile [Android] | :heavy_check_mark:
-![Chrome][3] Mobile [iOS] | :heavy_check_mark:
-![Chrome][3] [Mac] | :heavy_check_mark:
-![Chrome][3] [Win] | :heavy_check_mark:
-![Edge][4] Mobile | :heavy_check_mark:
-![Edge][4] [Win] | :heavy_check_mark:
-![Edge][4] [Xbox] | :heavy_check_mark:
-![Firefox][5] Mobile [Android] | :heavy_check_mark:
-![Firefox][5] Mobile [iOS] | :heavy_check_mark:
-![Firefox][5] [Mac] | :heavy_check_mark:
-![Firefox][5] [Win] | :heavy_check_mark:
-![IE][91] 7 [Win] | :heavy_check_mark:
-![IE][91] 8 [Win] | :heavy_check_mark:
-![IE][92] 9 [Win] | :heavy_check_mark:
-![IE][92] 10 [Win] | :heavy_check_mark:
-![IE][92] 11 [Win] | :heavy_check_mark:
-![Opera][6] [Mac] | :heavy_check_mark:
-![Opera][6] [Win] | :heavy_check_mark:
-![Opera][6] Mobile [Android] | :heavy_check_mark:
-![OperaMini][7] Mini [iOS] | :heavy_check_mark:
-![Safari][8] [iPad] | :heavy_check_mark:
-![Safari][8] [iPhone] | :heavy_check_mark:
-![Safari][8] [Mac] | :heavy_check_mark:
+Supports all major browsers with vendor specific prefixes, Internet Explorer 9+. However, some browsers don't support some features, functions or properties. Additionally, things like scrollbar styling and repeated linear gradients may look different on some browsers. As always, test accordingly.
 
 ## Road Map
 [[top]](#table-of-contents)
@@ -229,9 +203,8 @@ Languages and themes will be added for as long as this project is not deprecated
  
 - font
   - Font family is a google font 'Source Code Pro', no fallback, just monospace
+  - Some websafe fonts used for UI purposes, no additional HTTP requests needed for these
  
-- `@keyframes` brevity enforced, browser specific prefixes
-
 - Content overflow: overflow-y is set to auto for the `ft-syntax-highlight` class. Any `<pre>` tag >= 400px will be y-scrollable automatically
 
 - Data attribute/value structure
@@ -253,11 +226,3 @@ Authors and contributors are listed in the [authors.txt][2] file.
 
 [1]: https://github.com/soulshined/ft-syntax-highlighter/blob/master/LICENSE
 [2]: https://github.com/soulshined/ft-syntax-highlighter/blob/master/authors.txt
-[3]: https://github.com/alrra/browser-logos/blob/master/src/chrome/chrome_24x24.png
-[4]: https://github.com/alrra/browser-logos/blob/master/src/edge/edge_24x24.png
-[5]: https://github.com/alrra/browser-logos/blob/master/src/firefox/firefox_24x24.png
-[6]: https://github.com/alrra/browser-logos/blob/master/src/opera/opera_24x24.png
-[7]: https://github.com/alrra/browser-logos/blob/master/src/opera-mini/opera-mini_24x24.png
-[8]: https://github.com/alrra/browser-logos/blob/master/src/safari/safari_24x24.png
-[91]: https://github.com/alrra/browser-logos/blob/master/src/archive/internet-explorer_7-8/internet-explorer_7-8_24x24.png
-[92]: https://github.com/alrra/browser-logos/blob/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_24x24.png
