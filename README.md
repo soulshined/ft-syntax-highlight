@@ -83,7 +83,7 @@ We encourage users to build Javascript integration if it fits within the scope o
 [[top]](#table-of-contents)
 
 `<pre>` tag attributes:
-- `data-syntax`       : defines the langauge tooltip and UI title | no default | accepts any supported language
+- `data-syntax`       : defines the language tooltip and UI title | no default | accepts any supported language
 - `data-syntax-theme` : defines the syntax highlighting theme | defaults to UI themes color | list can be found [here](examples#syntax-themes)
 - `data-ui-theme`     : (optional) changes the UI of the `pre` tag | defaults to "dark" | list can be found [here](examples#ui-themes)
 - `data-showTooltips` : (optional) display tooltips on hover | defaults to false | accepts "true"
@@ -106,13 +106,13 @@ Although, we do specifically target identifiers like a Class, or UDF. These will
 - `<span class="keyword">` should be reserved for ALL languages' reserved words. (Things like `else`, `if`, `then`, `do`, `until`, `while`, `not`, `return` etc.). Each language has a predefined list of reserved words. This is considered good practice for this tag and works with all languages using ft-syntax-highlighter.css
 - `<span class="newline">` It's important to stress the value of this tag. Users could argue that they simply could type in the line number instead of using a dedicated `<span>` tag. However, for the users that aren't aware, `::before` and `::after` pseudo classes don't allow user selection. In other words, when viewers go to your website then copy and paste code in the `<pre>` tag, the line numbers will not be included in the copied text due to being `::before` content. This is important when maintaining a 'pure CSS' solution. Additionally, because whitespace is preserved, it's recommended to use this tag inline with the left side of the `<code>` tag. :
 ```html
-  <pre class="ft-syntax-hightlight" data-syntax="html" ...>
+  <pre class="ft-syntax-highlight" data-syntax="html" ...>
     <code>
     <span class="newline"></span>
     ...
 ```
 - `<span class="unit">` should be reserved for any case where a unit of measure, time, numeric value, temperature etc are defined
-- `<span class="identifier-native>` should be reserved for functions, tags or class methods, and select few other things, that are native to the programming language. For Javascript an example would be `isNaN()` and `match()`
+- `<span class="identifier-native">` should be reserved for functions, tags or class methods, and select few other things, that are native to the programming language. For Javascript an example would be `isNaN()` and `match()`
 - `<span class="typecast">` should be reserved for syntax explicitly typecasting an identifier. For example, in PHP:
 ```html
   ...
